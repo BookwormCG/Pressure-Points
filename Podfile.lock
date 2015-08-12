@@ -1,0 +1,25 @@
+PODS:
+  - Masonry (0.6.2)
+  - MPColorTools (1.6.1)
+  - Realm (0.94.0):
+    - Realm/Headers (= 0.94.0)
+  - Realm/Headers (0.94.0)
+  - UIColor+Hex (1.0.1):
+    - UIColor+Hex/NSColor (= 1.0.1)
+    - UIColor+Hex/UIColor (= 1.0.1)
+  - UIColor+Hex/UIColor (1.0.1)
+
+DEPENDENCIES:
+  - Masonry
+  - MPColorTools (~> 1.6)
+  - Realm
+  - Realm/Headers
+  - UIColor+Hex (~> 1.0)
+
+SPEC CHECKSUMS:
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  MPColorTools: a5d2a09fc44750aea0366f666aa52c80565c0764
+  Realm: a046149653e0ca220b65b5783da907aa5b74d86c
+  UIColor+Hex: 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+
+COCOAPODS: 0.37.2

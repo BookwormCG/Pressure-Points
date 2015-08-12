@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4CF86A1B57667F0029BA7C /* PointEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4CF8691B57667F0029BA7C /* PointEntryTableViewCell.m */; };
+		BC66A7341B556AD700682449 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC66A7331B556AD700682449 /* DataManager.m */; };
+		BC66A7391B55B96B00682449 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC66A7381B55B96B00682449 /* FourthViewController.m */; };
+		BC7CD5DE1B72B116008511D3 /* PointEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7CD5DD1B72B116008511D3 /* PointEntry.m */; };
 		BCB1BDCF1B4C81820044179E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDCE1B4C81820044179E /* main.m */; };
 		BCB1BDD21B4C81820044179E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDD11B4C81820044179E /* AppDelegate.m */; };
 		BCB1BDD51B4C81820044179E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDD41B4C81820044179E /* FirstViewController.m */; };
-		BCB1BDD81B4C81820044179E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDD71B4C81820044179E /* SecondViewController.m */; };
 		BCB1BDDB1B4C81820044179E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB1BDD91B4C81820044179E /* Main.storyboard */; };
-		BCB1BDDD1B4C81820044179E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB1BDDC1B4C81820044179E /* Images.xcassets */; };
 		BCB1BDE01B4C81820044179E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB1BDDE1B4C81820044179E /* LaunchScreen.xib */; };
 		BCB1BDEC1B4C81820044179E /* Pressure_PointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDEB1B4C81820044179E /* Pressure_PointsTests.m */; };
+		BCB1BDF71B4CC31E0044179E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDF61B4CC31E0044179E /* LoginViewController.m */; };
+		BCB1BDFA1B4CC8750044179E /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BDF91B4CC8750044179E /* TermsViewController.m */; };
+		BCB1BE041B4D9A140044179E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB1BE031B4D9A140044179E /* LoginView.xib */; };
+		BCB1BE0B1B4EE6240044179E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB1BE0A1B4EE6240044179E /* ThirdViewController.m */; };
+		BCB1BE131B5312620044179E /* TermsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB1BE121B5312620044179E /* TermsView.xib */; };
+		BCD9328E1B79200F0070D1A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD9328D1B79200F0070D1A5 /* Images.xcassets */; };
+		BCD9329B1B7A55320070D1A5 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932981B7A536C0070D1A5 /* Raleway-SemiBold.ttf */; };
+		BCD9329C1B7A55320070D1A5 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932961B7A536C0070D1A5 /* Raleway-Medium.ttf */; };
+		BCD9329D1B7A55320070D1A5 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932921B7A536C0070D1A5 /* Raleway-ExtraBold.ttf */; };
+		BCD9329E1B7A55320070D1A5 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932951B7A536C0070D1A5 /* Raleway-Light.ttf */; };
+		BCD9329F1B7A55320070D1A5 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932971B7A536C0070D1A5 /* Raleway-Regular.ttf */; };
+		BCD932A01B7A55320070D1A5 /* Raleway-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932941B7A536C0070D1A5 /* Raleway-Heavy.ttf */; };
+		BCD932A11B7A55320070D1A5 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932991B7A536C0070D1A5 /* Raleway-Thin.ttf */; };
+		BCD932A21B7A55320070D1A5 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932911B7A536C0070D1A5 /* Raleway-Bold.ttf */; };
+		BCD932A31B7A55320070D1A5 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCD932931B7A536C0070D1A5 /* Raleway-ExtraLight.ttf */; };
+		C8412D2580F29D85AEE59878 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C74C6683270854FDB160D08B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A41E9AFAE5E22D3108D204C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AB88FF38B44819203E67E9CD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BC4CF8681B57667F0029BA7C /* PointEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointEntryTableViewCell.h; sourceTree = "<group>"; };
+		BC4CF8691B57667F0029BA7C /* PointEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointEntryTableViewCell.m; sourceTree = "<group>"; };
+		BC66A7321B556AD700682449 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		BC66A7331B556AD700682449 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		BC66A7381B55B96B00682449 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		BC7CD5DC1B72B116008511D3 /* PointEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointEntry.h; sourceTree = "<group>"; };
+		BC7CD5DD1B72B116008511D3 /* PointEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointEntry.m; sourceTree = "<group>"; };
 		BCB1BDC91B4C81820044179E /* Pressure Points.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pressure Points.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB1BDCD1B4C81820044179E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB1BDCE1B4C81820044179E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,14 +62,31 @@
 		BCB1BDD11B4C81820044179E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BCB1BDD31B4C81820044179E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BCB1BDD41B4C81820044179E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BCB1BDD61B4C81820044179E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BCB1BDD71B4C81820044179E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BCB1BDDA1B4C81820044179E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCB1BDDC1B4C81820044179E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCB1BDDF1B4C81820044179E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCB1BDE51B4C81820044179E /* Pressure PointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pressure PointsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB1BDEA1B4C81820044179E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB1BDEB1B4C81820044179E /* Pressure_PointsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pressure_PointsTests.m; sourceTree = "<group>"; };
+		BCB1BDF51B4CC31E0044179E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BCB1BDF61B4CC31E0044179E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BCB1BDF81B4CC8750044179E /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsViewController.h; sourceTree = "<group>"; };
+		BCB1BDF91B4CC8750044179E /* TermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsViewController.m; sourceTree = "<group>"; };
+		BCB1BE031B4D9A140044179E /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		BCB1BE091B4EE6240044179E /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BCB1BE0A1B4EE6240044179E /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BCB1BE0C1B4EE6470044179E /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		BCB1BE121B5312620044179E /* TermsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsView.xib; sourceTree = "<group>"; };
+		BCD9328D1B79200F0070D1A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCD932911B7A536C0070D1A5 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "Resources/Raleway/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		BCD932921B7A536C0070D1A5 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBold.ttf"; path = "Resources/Raleway/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BCD932931B7A536C0070D1A5 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLight.ttf"; path = "Resources/Raleway/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BCD932941B7A536C0070D1A5 /* Raleway-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Heavy.ttf"; path = "Resources/Raleway/Raleway-Heavy.ttf"; sourceTree = "<group>"; };
+		BCD932951B7A536C0070D1A5 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "Resources/Raleway/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		BCD932961B7A536C0070D1A5 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "Resources/Raleway/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		BCD932971B7A536C0070D1A5 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "Resources/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		BCD932981B7A536C0070D1A5 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "Resources/Raleway/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		BCD932991B7A536C0070D1A5 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "Resources/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		C74C6683270854FDB160D08B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8412D2580F29D85AEE59878 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D06CA95D11A8ADF4C1EBC4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB88FF38B44819203E67E9CD /* Pods.debug.xcconfig */,
+				0A41E9AFAE5E22D3108D204C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BCB1BDC01B4C81820044179E = {
 			isa = PBXGroup;
 			children = (
 				BCB1BDCB1B4C81820044179E /* Pressure Points */,
 				BCB1BDE81B4C81820044179E /* Pressure PointsTests */,
 				BCB1BDCA1B4C81820044179E /* Products */,
+				1D06CA95D11A8ADF4C1EBC4A /* Pods */,
+				D93A07C0F40D0220EF6945AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,12 +144,24 @@
 				BCB1BDD11B4C81820044179E /* AppDelegate.m */,
 				BCB1BDD31B4C81820044179E /* FirstViewController.h */,
 				BCB1BDD41B4C81820044179E /* FirstViewController.m */,
-				BCB1BDD61B4C81820044179E /* SecondViewController.h */,
-				BCB1BDD71B4C81820044179E /* SecondViewController.m */,
 				BCB1BDD91B4C81820044179E /* Main.storyboard */,
-				BCB1BDDC1B4C81820044179E /* Images.xcassets */,
+				BCD9328D1B79200F0070D1A5 /* Images.xcassets */,
 				BCB1BDDE1B4C81820044179E /* LaunchScreen.xib */,
 				BCB1BDCC1B4C81820044179E /* Supporting Files */,
+				BCB1BDF51B4CC31E0044179E /* LoginViewController.h */,
+				BCB1BDF61B4CC31E0044179E /* LoginViewController.m */,
+				BCB1BDF81B4CC8750044179E /* TermsViewController.h */,
+				BCB1BDF91B4CC8750044179E /* TermsViewController.m */,
+				BCB1BE091B4EE6240044179E /* ThirdViewController.h */,
+				BCB1BE0A1B4EE6240044179E /* ThirdViewController.m */,
+				BCB1BE0C1B4EE6470044179E /* FourthViewController.h */,
+				BC66A7381B55B96B00682449 /* FourthViewController.m */,
+				BC66A7321B556AD700682449 /* DataManager.h */,
+				BC66A7331B556AD700682449 /* DataManager.m */,
+				BC4CF8681B57667F0029BA7C /* PointEntryTableViewCell.h */,
+				BC4CF8691B57667F0029BA7C /* PointEntryTableViewCell.m */,
+				BC7CD5DC1B72B116008511D3 /* PointEntry.h */,
+				BC7CD5DD1B72B116008511D3 /* PointEntry.m */,
 			);
 			path = "Pressure Points";
 			sourceTree = "<group>";
@@ -101,8 +169,11 @@
 		BCB1BDCC1B4C81820044179E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BCD932901B7A53530070D1A5 /* Fonts */,
 				BCB1BDCD1B4C81820044179E /* Info.plist */,
 				BCB1BDCE1B4C81820044179E /* main.m */,
+				BCB1BE031B4D9A140044179E /* LoginView.xib */,
+				BCB1BE121B5312620044179E /* TermsView.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +195,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BCD932901B7A53530070D1A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BCD9329A1B7A538B0070D1A5 /* Raleway */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		BCD9329A1B7A538B0070D1A5 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				BCD932981B7A536C0070D1A5 /* Raleway-SemiBold.ttf */,
+				BCD932961B7A536C0070D1A5 /* Raleway-Medium.ttf */,
+				BCD932921B7A536C0070D1A5 /* Raleway-ExtraBold.ttf */,
+				BCD932951B7A536C0070D1A5 /* Raleway-Light.ttf */,
+				BCD932971B7A536C0070D1A5 /* Raleway-Regular.ttf */,
+				BCD932941B7A536C0070D1A5 /* Raleway-Heavy.ttf */,
+				BCD932991B7A536C0070D1A5 /* Raleway-Thin.ttf */,
+				BCD932911B7A536C0070D1A5 /* Raleway-Bold.ttf */,
+				BCD932931B7A536C0070D1A5 /* Raleway-ExtraLight.ttf */,
+			);
+			name = Raleway;
+			sourceTree = "<group>";
+		};
+		D93A07C0F40D0220EF6945AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C74C6683270854FDB160D08B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB1BDEF1B4C81820044179E /* Build configuration list for PBXNativeTarget "Pressure Points" */;
 			buildPhases = (
+				FDD24C1782148B6E96DCAE04 /* Check Pods Manifest.lock */,
 				BCB1BDC51B4C81820044179E /* Sources */,
 				BCB1BDC61B4C81820044179E /* Frameworks */,
 				BCB1BDC71B4C81820044179E /* Resources */,
+				37BC8D56A55E5A1C97C47915 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,11 +273,12 @@
 		BCB1BDC11B4C81820044179E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Carlos  Guanche";
 				TargetAttributes = {
 					BCB1BDC81B4C81820044179E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = D6P54PEC9E;
 					};
 					BCB1BDE41B4C81820044179E = {
 						CreatedOnToolsVersion = 6.4;
@@ -204,9 +310,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD932A01B7A55320070D1A5 /* Raleway-Heavy.ttf in Resources */,
+				BCD932A21B7A55320070D1A5 /* Raleway-Bold.ttf in Resources */,
+				BCD9329D1B7A55320070D1A5 /* Raleway-ExtraBold.ttf in Resources */,
+				BCD9329F1B7A55320070D1A5 /* Raleway-Regular.ttf in Resources */,
+				BCD9329C1B7A55320070D1A5 /* Raleway-Medium.ttf in Resources */,
 				BCB1BDDB1B4C81820044179E /* Main.storyboard in Resources */,
+				BCD9328E1B79200F0070D1A5 /* Images.xcassets in Resources */,
 				BCB1BDE01B4C81820044179E /* LaunchScreen.xib in Resources */,
-				BCB1BDDD1B4C81820044179E /* Images.xcassets in Resources */,
+				BCD9329B1B7A55320070D1A5 /* Raleway-SemiBold.ttf in Resources */,
+				BCD9329E1B7A55320070D1A5 /* Raleway-Light.ttf in Resources */,
+				BCD932A11B7A55320070D1A5 /* Raleway-Thin.ttf in Resources */,
+				BCB1BE131B5312620044179E /* TermsView.xib in Resources */,
+				BCD932A31B7A55320070D1A5 /* Raleway-ExtraLight.ttf in Resources */,
+				BCB1BE041B4D9A140044179E /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,15 +336,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37BC8D56A55E5A1C97C47915 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD24C1782148B6E96DCAE04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCB1BDC51B4C81820044179E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB1BDD81B4C81820044179E /* SecondViewController.m in Sources */,
+				BCB1BDFA1B4CC8750044179E /* TermsViewController.m in Sources */,
+				BC66A7341B556AD700682449 /* DataManager.m in Sources */,
+				BC7CD5DE1B72B116008511D3 /* PointEntry.m in Sources */,
+				BCB1BE0B1B4EE6240044179E /* ThirdViewController.m in Sources */,
 				BCB1BDD21B4C81820044179E /* AppDelegate.m in Sources */,
+				BC4CF86A1B57667F0029BA7C /* PointEntryTableViewCell.m in Sources */,
+				BC66A7391B55B96B00682449 /* FourthViewController.m in Sources */,
 				BCB1BDD51B4C81820044179E /* FirstViewController.m in Sources */,
 				BCB1BDCF1B4C81820044179E /* main.m in Sources */,
+				BCB1BDF71B4CC31E0044179E /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +446,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -351,21 +508,31 @@
 		};
 		BCB1BDF01B4C81820044179E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB88FF38B44819203E67E9CD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pressure Points/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		BCB1BDF11B4C81820044179E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A41E9AFAE5E22D3108D204C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pressure Points/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -383,6 +550,7 @@
 				);
 				INFOPLIST_FILE = "Pressure PointsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cguan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pressure Points.app/Pressure Points";
 			};
@@ -398,6 +566,7 @@
 				);
 				INFOPLIST_FILE = "Pressure PointsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cguan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pressure Points.app/Pressure Points";
 			};
@@ -422,6 +591,7 @@
 				BCB1BDF11B4C81820044179E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCB1BDF21B4C81820044179E /* Build configuration list for PBXNativeTarget "Pressure PointsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +600,7 @@
 				BCB1BDF41B4C81820044179E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
