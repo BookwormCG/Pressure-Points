@@ -218,12 +218,17 @@
             }
         }
         if(soonest != nil){
-            self.subPoints.text = [NSString stringWithFormat:@"-%ld",soonest.amount];
+            if(soonest.amount <= [[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"]){
+                self.subPoints.text = [NSString stringWithFormat:@"-%ld",soonest.amount];
+            }else{
+                self.subPoints.text = [NSString stringWithFormat:@"-%ld", [[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"]];
+            }
             [self.subPoints mas_updateConstraints:^(MASConstraintMaker *make) {
             //    make.right.equalTo(self.mainPoints.mas_left).with.offset(7);
                 make.right.equalTo(self.view.mas_centerX).offset(-50);
             }];
             self.subPoints.layer.opacity = 0.7;
+            
         }
         else{
             //NSLog(@"Soonest doesn't exist");
@@ -368,26 +373,28 @@
                     
                     if(raw <= remaining)
                     {
-                        [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"remainingPoints"])-(raw)) forKey:@"remainingPoints"];
+                        if(raw != 0){
+                            
+                            [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"remainingPoints"])-(raw)) forKey:@"remainingPoints"];
                         
-                        [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"redeemedPoints"])+(raw)) forKey:@"redeemedPoints"];
+                            [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"redeemedPoints"])+(raw)) forKey:@"redeemedPoints"];
                         
-                        [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"rNotE"])+(raw)) forKey:@"rNotE"];
+                            [NSUserDefaults.standardUserDefaults setInteger:(((int)[NSUserDefaults.standardUserDefaults integerForKey:@"rNotE"])+(raw)) forKey:@"rNotE"];
                         
                         
-                        PointEntry *entry = [[PointEntry alloc] init];
-                        entry.date = [NSDate date];
-                        entry.amount = raw;
-                        entry.isExpired = NO;
-                        entry.isSubt = YES;
+                            PointEntry *entry = [[PointEntry alloc] init];
+                            entry.date = [NSDate date];
+                            entry.amount = raw;
+                            entry.isExpired = NO;
+                            entry.isSubt = YES;
                         
-                        RLMRealm *realm = [RLMRealm defaultRealm];
-                        [realm beginWriteTransaction];
-                        [realm addObject:entry];
-                        [realm commitWriteTransaction];
-                        
-                        [self updateLabels];
-                        
+                            RLMRealm *realm = [RLMRealm defaultRealm];
+                            [realm beginWriteTransaction];
+                            [realm addObject:entry];
+                            [realm commitWriteTransaction];
+                            
+                            [self updateLabels];
+                        }
                     }else
                     {
                         [self presentViewController:subtractor animated:YES completion:nil];

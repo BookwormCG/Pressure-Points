@@ -27,6 +27,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
+    [self updateLabels];
     [_pointEntries reloadData];
 }
 

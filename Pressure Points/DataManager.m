@@ -10,63 +10,6 @@
 
 @implementation DataManager
 
-
-/*
-+ (NSMutableArray*)getEntriesArray
-{
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"entries"] != nil)
-    {
-        return [NSJSONSerialization JSONObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"entries"] options:NSJSONReadingMutableContainers error:nil];
-    }
-    else return nil;
-}
-
-
-+(NSMutableDictionary*)generateAdditionEntryWithDate:(NSNumber*)date andExpiration:(BOOL)expired andValue:(NSString*)added;
-{
-    NSNumber *value = [NSNumber numberWithInteger:[added integerValue]];
-
-    NSMutableDictionary *newEntry = [NSMutableDictionary dictionaryWithObjectsAndKeys:date, @"date", [NSNumber numberWithBool:NO], @"isExpired", value, @"amount", nil];
-    
-    [newEntry setObject:value forKey:@"amount"];
-    
-    NSMutableArray *entries = [DataManager getEntriesArray];
-    [entries insertObject:newEntry atIndex:0];
-    
-    NSData *json = [NSJSONSerialization dataWithJSONObject:entries options:NSJSONWritingPrettyPrinted error:nil];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:json forKey:@"entries"];
-    
-    return newEntry;
-}
-
-+ (NSMutableDictionary*)generateSubtractionEntryWithDate :(NSNumber*)date andValue:(NSString*)subtracted
-{
-    
-    NSNumber *value = [NSNumber numberWithInteger:[subtracted integerValue]];
-    
-    NSMutableDictionary *newEntry = [NSMutableDictionary dictionaryWithObjectsAndKeys:date, @"date", value, @"amount", nil];
-    
-    NSMutableArray *entries = [DataManager getEntriesArray];
-    [entries insertObject:newEntry atIndex:0];
-    
-    NSData *json = [NSJSONSerialization dataWithJSONObject:entries options:NSJSONWritingPrettyPrinted error:nil];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:json forKey:@"entries"];
-    
-    return newEntry;
-}
-
-
-+ (BOOL)entryIsExpired:(PointEntry*)entry
-{
-    NSLog(@"it is %d", entry.isExpired);
-    if (entry.isExpired) {
-        return YES;
-    }
-    else return NO;
-}*/
-
 + (BOOL)entryShouldExpire :(PointEntry*)entry
 {
     
