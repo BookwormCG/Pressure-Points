@@ -56,10 +56,9 @@
         make.width.equalTo(self.view.mas_width);
         make.height.equalTo(self.view.mas_height);
     }];
-    _mainView.backgroundColor = MP_HSL(0.4833333, 1, 0.5);
-    _mainView.layer.opacity = 0.5;
+    _mainView.backgroundColor = [UIColor whiteColor];
     
-    NSLog(@"muffins:%@", [UIFont fontNamesForFamilyName:@"Lato"]);
+    NSLog(@"muffins:%@", [UIFont fontNamesForFamilyName:@"Raleway"]);
     
     _frameWork = [[UIView alloc]init];
     [self.view addSubview:_frameWork];
@@ -103,10 +102,9 @@
         make.width.equalTo(self.view.mas_width);
     }];
     //_mainPoints.font = [UIFont fontWithName:@"Raleway" size:52];
-    _mainPoints.font = [UIFont fontWithName:@"Lato" size:52];
+    _mainPoints.font = [UIFont fontWithName:@"Raleway" size:52];
     self.mainPoints.textAlignment = NSTextAlignmentCenter;
-    self.mainPoints.textColor = MP_HSL(0.675, 0.63, 0.5);
-    _mainPoints.layer.opacity = 0.7;
+    self.mainPoints.textColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     
     [self.view addSubview:_subPoints];
     [self.subPoints mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -116,9 +114,8 @@
         make.height.equalTo(@40);
     }];
     //_subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
-    _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
-    _subPoints.textColor = MP_HSL(0.675, 0.63, 0.5);
-    _subPoints.layer.opacity = 0.7;
+    _subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
+    _subPoints.textColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     
     [self.view addSubview:_days];
     [self.days mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -128,9 +125,8 @@
     }];
     self.days.textAlignment = NSTextAlignmentCenter;
     //_days.font = [UIFont fontWithName:@"Raleway" size:32];
-    _days.font = [UIFont fontWithName:@"Lato" size:32];
-    _days.textColor = MP_HSL(0.675, 0.63, 0.5);
-    _days.layer.opacity = 0.7;
+    _days.font = [UIFont fontWithName:@"Raleway" size:32];
+    _days.textColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     
     /*
     [logoView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -195,8 +191,8 @@
         //make.right.equalTo(self.mainPoints.mas_left).with.offset(100);
             make.right.equalTo(self.view.mas_centerX).with.offset(15);
         }];
-        _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
-        _subPoints.layer.opacity = 0.7;
+        _subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
+        //_subPoints.textColor = [UIColor colorWithWhite:0 alpha:0.9];
     }
     else
     {
@@ -244,8 +240,8 @@
             //    make.right.equalTo(self.mainPoints.mas_left).with.offset(7);
                 make.right.equalTo(self.view.mas_centerX).offset(-35);
             }];
-            self.subPoints.layer.opacity = 0.9;
-            _subPoints.font = [UIFont fontWithName:@"Lato-LightItalic" size:32];
+            _subPoints.font = [UIFont fontWithName:@"Raleway-Light" size:32];
+            //_subPoints.textColor = [UIColor colorWithWhite:0 alpha:0.9];
             
         }
         else{
@@ -255,8 +251,8 @@
             //    make.right.equalTo(self.mainPoints.mas_left).with.offset(100);
                 make.right.equalTo(self.view.mas_centerX).with.offset(15);
             }];
-            _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
-            _subPoints.layer.opacity = 0.7;
+            _subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
+            //_subPoints.textColor = [UIColor colorWithWhite:0 alpha:0.9];
             //self.subPoints.layer.opacity = 1;
         }
 
@@ -269,8 +265,8 @@
             make.left.equalTo(self.view.mas_centerX).with.offset(15);
         }];
         //self.days.layer.opacity = 1;
-        _days.font = [UIFont fontWithName:@"Lato" size:32];
-        _days.layer.opacity = 0.7;
+        _days.font = [UIFont fontWithName:@"Raleway" size:32];
+        //_days.textColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     }
     else{
         /***********/
@@ -279,20 +275,20 @@
         [self.days mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.view.mas_centerX).with.offset(-35);
         }];
-        self.days.layer.opacity = 0.9;
-        self.days.font = [UIFont fontWithName:@"Lato-LightItalic" size:33];
+        self.days.font = [UIFont fontWithName:@"Raleway-Light" size:33];
+        //_days.textColor = [UIColor colorWithWhite:0 alpha:0.9];
         /***********/
     }
     
     if([[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"] != 0){
         self.mainPoints.text = [NSString stringWithFormat:@"%d",(int)[[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"]];
-        _mainPoints.font = [UIFont fontWithName:@"Lato-Black" size:52];
-        _mainPoints.layer.opacity = 0.5;
+        _mainPoints.font = [UIFont fontWithName:@"Raleway-SemiBold" size:52];
+        _mainPoints.textColor = [UIColor colorWithWhite:0 alpha:0.7];
     }
     else{
         self.mainPoints.text = @"You Don't";
-        _mainPoints.layer.opacity = 0.7;
-        _mainPoints.font = [UIFont fontWithName:@"Lato" size:52];
+        _mainPoints.font = [UIFont fontWithName:@"Raleway" size:52];
+        _mainPoints.textColor = [UIColor colorWithWhite:0.0 alpha:0.9];
     }
 }
 
