@@ -13,6 +13,7 @@
 #import "DataManager.h"
 #import "Realm/Realm.h"
 #import "PointEntry.h"
+#import "MPColorTools.h"
 
 @interface FirstViewController ()
 
@@ -55,6 +56,10 @@
         make.width.equalTo(self.view.mas_width);
         make.height.equalTo(self.view.mas_height);
     }];
+    _mainView.backgroundColor = MP_HSL(0.4833333, 1, 0.5);
+    _mainView.layer.opacity = 0.5;
+    
+    NSLog(@"muffins:%@", [UIFont fontNamesForFamilyName:@"Lato"]);
     
     _frameWork = [[UIView alloc]init];
     [self.view addSubview:_frameWork];
@@ -81,10 +86,12 @@
     _qrScanner.bounds = _frameWork.bounds;
     //_qrScanner.backgroundColor = [UIColor whiteColor];
     
+    /*
     UIImageView *logoView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     [self.view addSubview:logoView];
     //[logoView setImage:[UIImage imageNamed:@"ImprovedLogo"]];
     logoView.contentMode = UIViewContentModeScaleAspectFill;
+     */
     
     [self.view addSubview:self.mainPoints];
     [self.mainPoints mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -95,10 +102,11 @@
         make.height.equalTo(@80);
         make.width.equalTo(self.view.mas_width);
     }];
-    _mainPoints.font = [UIFont fontWithName:@"Raleway" size:52];
+    //_mainPoints.font = [UIFont fontWithName:@"Raleway" size:52];
+    _mainPoints.font = [UIFont fontWithName:@"Lato" size:52];
     self.mainPoints.textAlignment = NSTextAlignmentCenter;
-    //self.mainPoints.textColor = self.mainView.backgroundColor;
-    //self.mainPoints.backgroundColor = [UIColor whiteColor];
+    self.mainPoints.textColor = MP_HSL(0.675, 0.63, 0.5);
+    _mainPoints.layer.opacity = 0.7;
     
     [self.view addSubview:_subPoints];
     [self.subPoints mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,7 +115,10 @@
         make.width.greaterThanOrEqualTo(@90);
         make.height.equalTo(@40);
     }];
-    _subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
+    //_subPoints.font = [UIFont fontWithName:@"Raleway" size:32];
+    _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
+    _subPoints.textColor = MP_HSL(0.675, 0.63, 0.5);
+    _subPoints.layer.opacity = 0.7;
     
     [self.view addSubview:_days];
     [self.days mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -116,15 +127,19 @@
         make.width.greaterThanOrEqualTo(@100);
     }];
     self.days.textAlignment = NSTextAlignmentCenter;
-    _days.font = [UIFont fontWithName:@"Raleway" size:32];
+    //_days.font = [UIFont fontWithName:@"Raleway" size:32];
+    _days.font = [UIFont fontWithName:@"Lato" size:32];
+    _days.textColor = MP_HSL(0.675, 0.63, 0.5);
+    _days.layer.opacity = 0.7;
     
-    
+    /*
     [logoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mainPoints.mas_top);
         make.left.equalTo(self.subPoints.mas_left);
         make.right.equalTo(self.days.mas_right);
     }];
-    
+    */
+     
     [self.view bringSubviewToFront:topBar];
     
 
@@ -175,11 +190,13 @@
     if(arr == nil || [arr count] == 0)
     {
         self.subPoints.text = @"Have Any";
-        self.subPoints.layer.opacity = 1;
+        //self.subPoints.layer.opacity = 1;
         [self.subPoints mas_updateConstraints:^(MASConstraintMaker *make) {
         //make.right.equalTo(self.mainPoints.mas_left).with.offset(100);
             make.right.equalTo(self.view.mas_centerX).with.offset(15);
         }];
+        _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
+        _subPoints.layer.opacity = 0.7;
     }
     else
     {
@@ -225,9 +242,10 @@
             }
             [self.subPoints mas_updateConstraints:^(MASConstraintMaker *make) {
             //    make.right.equalTo(self.mainPoints.mas_left).with.offset(7);
-                make.right.equalTo(self.view.mas_centerX).offset(-50);
+                make.right.equalTo(self.view.mas_centerX).offset(-35);
             }];
-            self.subPoints.layer.opacity = 0.7;
+            self.subPoints.layer.opacity = 0.9;
+            _subPoints.font = [UIFont fontWithName:@"Lato-LightItalic" size:32];
             
         }
         else{
@@ -237,7 +255,9 @@
             //    make.right.equalTo(self.mainPoints.mas_left).with.offset(100);
                 make.right.equalTo(self.view.mas_centerX).with.offset(15);
             }];
-            self.subPoints.layer.opacity = 1;
+            _subPoints.font = [UIFont fontWithName:@"Lato" size:32];
+            _subPoints.layer.opacity = 0.7;
+            //self.subPoints.layer.opacity = 1;
         }
 
     }
@@ -248,24 +268,31 @@
         [self.days mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.view.mas_centerX).with.offset(15);
         }];
-        self.days.layer.opacity = 1;
+        //self.days.layer.opacity = 1;
+        _days.font = [UIFont fontWithName:@"Lato" size:32];
+        _days.layer.opacity = 0.7;
     }
     else{
         /***********/
         //NSTimeInterval interval = [[[NSDate alloc] initWithTimeInterval:fourMo sinceDate:soonest.date] timeIntervalSinceNow];
         self.days.text = [NSString stringWithFormat:@"in %d Days", (int)[[[NSDate alloc] initWithTimeInterval:fourMo sinceDate:soonest.date] timeIntervalSinceNow]];
         [self.days mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.view.mas_centerX).with.offset(-50);
+            make.left.equalTo(self.view.mas_centerX).with.offset(-35);
         }];
-        self.days.layer.opacity = 0.7;
+        self.days.layer.opacity = 0.9;
+        self.days.font = [UIFont fontWithName:@"Lato-LightItalic" size:33];
         /***********/
     }
     
     if([[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"] != 0){
         self.mainPoints.text = [NSString stringWithFormat:@"%d",(int)[[NSUserDefaults standardUserDefaults] integerForKey:@"remainingPoints"]];
+        _mainPoints.font = [UIFont fontWithName:@"Lato-Black" size:52];
+        _mainPoints.layer.opacity = 0.5;
     }
     else{
         self.mainPoints.text = @"You Don't";
+        _mainPoints.layer.opacity = 0.7;
+        _mainPoints.font = [UIFont fontWithName:@"Lato" size:52];
     }
 }
 

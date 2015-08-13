@@ -10,6 +10,7 @@
 #import "DataManager.h"
 #import "PointEntryTableViewCell.h"
 #import "Masonry.h"
+#import "MPColorTools.h"
 
 @interface FourthViewController ()
 
@@ -61,6 +62,7 @@
         //make.width.lessThanOrEqualTo(@150);
         make.height.greaterThanOrEqualTo(@110);
     }];
+    _remainingView.backgroundColor = MP_HSL(0.4833333, 1, 0.5);
     
     //[_remainingLabel removeConstraints:_remainingLabel.constraints];
     [self.remainingLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,9 +72,10 @@
         make.width.greaterThanOrEqualTo(@150);
         make.height.greaterThanOrEqualTo(@40);
     }];
-    _remainingLabel.font = [UIFont fontWithName:@"Raleway-Medium" size:35];
-    //_remainingLabel.textColor = [UIColor colorWithWhite:0 alpha:0.7];
-    //_remainingLabel.textColor = [UIColor brownColor];
+    //_remainingLabel.font = [UIFont fontWithName:@"Raleway-Medium" size:35];
+    _remainingLabel.textColor = MP_HSL(0.675, 0.63, 0.5);
+    _remainingLabel.font = [UIFont fontWithName:@"Lato-Bold" size:35];
+    _remainingLabel.layer.opacity = 0.6;
 
     //[_remainingText removeConstraints:_remainingText.constraints];
     [self.remainingText mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -82,10 +85,10 @@
         make.width.greaterThanOrEqualTo(@142);
         make.height.greaterThanOrEqualTo(@21);
     }];
-    UIFont *test = [UIFont fontWithName:@"Raleway" size:17];
-    _remainingText.font = test;
-    //_remainingText.textColor = [UIColor colorWithWhite:0 alpha:0.7];
-    //_remainingText.textColor = [UIColor brownColor];
+    //UIFont *test = [UIFont fontWithName:@"Raleway" size:17];
+    //_remainingText.font = test;
+    _remainingText.textColor = MP_HSL(0.675, 0.63, 0.5);
+    _remainingText.font = [UIFont fontWithName:@"Lato-Italic" size:17];
     
     //[_redeemedView removeConstraints:_redeemedView.constraints];
     [self.redeemedView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -96,17 +99,9 @@
         //make.width.lessThanOrEqualTo(@150);
         make.height.equalTo(self.remainingView.mas_height);
     }];
-    /*
-    _redeemedView.layer.masksToBounds = NO;
-    _redeemedView.layer.shadowColor = [UIColor blackColor].CGColor;
-    _redeemedView.layer.shadowOffset = CGSizeMake(0, 2);
-    _redeemedView.layer.shadowRadius = 2;
-    _redeemedView.layer.shadowOpacity = 1;
-     */
+    _redeemedView.backgroundColor = MP_HSL(0.675, 0.63, 0.5);
     
-    //_redeemedView.backgroundColor = [UIColor brownColor];
-    
-    //[_redeemedLabel removeConstraints:_redeemedLabel.constraints];
+
     [self.redeemedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.remainingLabel.mas_top);
         make.centerX.equalTo(self.redeemedView.mas_centerX);
@@ -114,7 +109,10 @@
         make.width.greaterThanOrEqualTo(@150);
         make.height.greaterThanOrEqualTo(@40);
     }];
-    _redeemedLabel.font = [UIFont fontWithName:@"Raleway-Medium" size:35];
+    //_redeemedLabel.font = [UIFont fontWithName:@"Raleway-Medium" size:35];
+    _redeemedLabel.font = [UIFont fontWithName:@"Lato-Bold" size:35];
+    _redeemedLabel.textColor = MP_HSL(0.4833333, 1, 0.5);
+    _redeemedLabel.layer.opacity = 0.6;
     
     //[_redeemedText removeConstraints:_redeemedText.constraints];
     [self.redeemedText mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -123,7 +121,9 @@
         make.width.greaterThanOrEqualTo(@142);
         make.height.greaterThanOrEqualTo(@21);
     }];
-    _redeemedText.font = [UIFont fontWithName:@"Raleway" size:17];
+    //_redeemedText.font = [UIFont fontWithName:@"Raleway" size:17];
+    _redeemedText.font = [UIFont fontWithName:@"Lato-Italic" size:17];
+    _redeemedText.textColor = MP_HSL(0.4833333, 1, 0.5);
     
     //[_pointEntries removeConstraints:_pointEntries.constraints];
     [self.pointEntries mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -19,25 +19,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _mainTitle.font = [UIFont fontWithName:@"Raleway-SemiBold" size:45];
+    self.view.backgroundColor = MP_HSL(0.4833333, 1, 0.5);
+    
+    _mainTitle.font = [UIFont fontWithName:@"Lato-Black" size:45];
     _mainTitle.layer.opacity = 0.7;
-    //_mainTitle.textColor = [UIColor colorWithWhite:0 alpha:0.7];
+    _mainTitle.textColor = MP_HSL(0.675, 0.63, 0.5);
     
-    _phone.font = [UIFont fontWithName:@"Raleway" size:17];
+    _phone.font = [UIFont fontWithName:@"Lato-Light" size:17];
     _phone.layer.opacity = 0.7;
-    //_phone.textColor = [UIColor colorWithWhite:0 alpha:0.7];
+    _phone.textColor = MP_HSL(0.675, 0.63, 0.5);
     
-    _address.font = [UIFont fontWithName:@"Raleway" size:17];
+    _address.font = [UIFont fontWithName:@"Lato-Light" size:17];
     _address.layer.opacity = 0.7;
-    //_address.textColor = [UIColor colorWithWhite:0 alpha:0.7];
+    _address.textColor = MP_HSL(0.675, 0.63, 0.5);
     
-    _site.font = [UIFont fontWithName:@"Raleway" size:17];
+    _site.font = [UIFont fontWithName:@"Lato-Light" size:17];
     _site.layer.opacity = 0.7;
-    //_site.textColor = [UIColor colorWithWhite:0 alpha:0.7];
+    _site.textColor = MP_HSL(0.675, 0.63, 0.5);
     
-    _emLine.font = [UIFont fontWithName:@"Raleway" size:17];
+    _emLine.font = [UIFont fontWithName:@"Lat-Light" size:17];
     _emLine.layer.opacity = 0.7;
-    //_emLine.textColor = [UIColor colorWithWhite:0 alpha:0.7];
+    _emLine.textColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning {
