@@ -58,7 +58,7 @@
     }];
     _mainView.backgroundColor = [UIColor whiteColor];
     
-    NSLog(@"muffins:%@", [UIFont fontNamesForFamilyName:@"Raleway"]);
+    //NSLog(@"muffins:%@", [UIFont fontNamesForFamilyName:@"Raleway"]);
     
     _frameWork = [[UIView alloc]init];
     [self.view addSubview:_frameWork];
